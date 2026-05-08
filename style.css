@@ -1,45 +1,194 @@
-body {
-    font-family: Arial, sans-serif;
+/* ==========================================================================
+   ESTILOS GENERALES Y VARIABLES (PROYECTO CRUCITOS V2)
+   ========================================================================== */
+
+/* Importar Fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variables de Color (basadas en image_0.png, pero armonizadas) */
+:root {
+    --primary: #ffc1e3;         /* Rosa pastel principal */
+    --accent: #ff85a2;          /* Rosa oscuro para acentos */
+    --secondary-green: #6ab47d; /* Verde suave (Index/Alexis) */
+    --secondary-orange: #ffa726; /* Naranja suave (Nosotros/Mateo) */
+    --secondary-gray: #78909c;  /* Gris suave (Contacto/Fer) */
+    --secondary-purple: #9575cd; /* Púrpura suave (API/Quetzal) */
+    --secondary-brown: #a1887f;  /* Marrón suave (Catálogo/Gus) */
+    --text-color: #444;
+    --bg-light: #fff9e3;        /* Fondo crema suave */
+    --border-radius: 12px;
+    --shadow-soft: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   HEADER Y NAVEGACIÓN PRINCIPAL
+   ========================================================================== */
 header {
-    background-color: #ffccdc;
-    padding: 20px;
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 2px solid var(--primary);
 }
 
-/* Banner superior mencionado en las notas */
+nav.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ==========================================================================
+   BANNER DE NAVEGACIÓN SECUNDARIO (para subpáginas)
+   ========================================================================== */
 .banner-nav {
     background-color: #333;
-    padding: 10px;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .banner-nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
 }
 
-.banner-promos {
-    background-color: #f9f9f9;
-    padding: 50px;
-    border: 2px dashed #ff85a2;
+.banner-nav a:hover {
+    color: var(--primary);
 }
 
+/* ==========================================================================
+   SECCIONES PRINCIPALES
+   ========================================================================== */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   COMPONENTES: TARJETAS (Cards)
+   ========================================================================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   FOOTER (NOTAS DE image_0.png)
+   ========================================================================== */
 footer {
-    background-color: #eee;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 0.9em;
+    background-color: white;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
 }
 
-.chat-window {
-    border: 1px solid #ccc;
-    height: 150px;
-    width: 300px;
-    margin: 10px auto;
-    padding: 10px;
-    background: #fdfdfd;
+footer p {
+    margin-bottom: 10px;
+}
+
+.team-credits {
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   WIDGET DE CHAT (API de Mensajería / Quetzal)
+   ========================================================================== */
+#chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-purple);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 24px;
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+#chat-widget:hover {
+    transform: scale(1.1);
 }
