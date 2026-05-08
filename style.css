@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ffccdc;
+    padding: 20px;
+}
+
+/* Banner superior mencionado en las notas */
+.banner-nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+.banner-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.banner-promos {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border: 2px dashed #ff85a2;
+}
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.chat-window {
+    border: 1px solid #ccc;
+    height: 150px;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #fdfdfd;
+}
