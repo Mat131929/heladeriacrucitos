@@ -2,34 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Nosotros - Heladería Crucitos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Heladería Crucitos V2</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para Nosotros (Color de image_0.png) */
+        h2 { border-bottom: 3px solid var(--secondary-orange); display: inline-block; padding-bottom: 5px; margin-bottom: 40px;}
+        .valores-section { text-align: center; }
+        .reconocimientos { background-color: #ffe0b2; color: #333;}
+        .card { border-top: 5px solid var(--secondary-orange); }
+    </style>
 </head>
 <body>
-    <!-- Banner superior para navegación (Excepto Index) -->
+    <!-- Banner de navegación superior (Nota de image_0.png) -->
     <nav class="banner-nav">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="contacto.html">Contacto</a>
+        <div class="container">
+            <a href="index.html">← Volver al Inicio</a>
+            <a href="catalogo.html">Ver Catálogo</a>
+            <a href="contacto.html">Contáctanos</a>
+        </div>
     </nav>
 
-    <section id="valores">
-        <!-- Sección de Mateo: Misión, Visión y Objetivos -->
-        <h2>Nuestra Misión</h2>
-        <p>Brindar los helados más deliciosos con ingredientes de calidad.</p>
-        
-        <h2>Visión de Futuro</h2>
-        <p>Ser la heladería referente en la región para finales de 2026.</p>
+    <main class="container">
+        <!-- Sección de Mateo: Valores de la Empresa -->
+        <section class="valores-section">
+            <h2>Nuestra Esencia</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title">Misión</h3>
+                    <p>Endulzar cada momento con helados artesanales de la más alta calidad y un servicio sonriente.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Visión</h3>
+                    <p>Ser reconocidos en la región como la heladería artesanal líder para finales de 2026.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Valores</h3>
+                    <p>Integridad, Pasión, Calidad Artesanal y Respeto por nuestros clientes.</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- Apartado de reconocimiento del trabajo -->
-        <div class="reconocimientos">
-            <h3>Reconocimiento Especial</h3>
-            <p>Este espacio está dedicado al esfuerzo y dedicación de nuestro equipo de trabajo.</p>
-        </div>
-    </section>
+        <!-- Apartado secreto/especial de reconocimiento -->
+        <section class="valores-section">
+            <h2>Reconocimientos Especiales</h2>
+            <div class="card reconocimientos">
+                <p>Nuestra página ha sido reconocida por su diseño modular y experiencia de usuario. ¡Gracias Familia 5!</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Heladería Crucitos.</p>
+        <div class="container">
+            <p>Crucitos</p>
+            <p class="team-credits">© 2026. Mateo.</p>
+        </div>
     </footer>
 </body>
 </html>
