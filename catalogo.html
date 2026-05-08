@@ -2,34 +2,81 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Catálogo - Heladería Crucitos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Heladería Crucitos V2</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para Catálogo (Color de image_0.png) */
+        h2 { border-bottom: 3px solid var(--secondary-brown); display: inline-block; padding-bottom: 5px; margin-bottom: 40px;}
+        .catalogo-section { text-align: center; }
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .producto {
+            background-color: white;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-soft);
+            text-align: left;
+            border-left: 5px solid var(--secondary-brown);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .producto-title { font-weight: 700; color: #555; }
+        .producto-price { font-size: 1.2rem; color: var(--secondary-brown); font-weight: 700;}
+        .producto img { max-width: 80px; margin-bottom: 10px;}
+    </style>
 </head>
 <body>
     <nav class="banner-nav">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
+        <div class="container">
+            <a href="index.html">← Inicio</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
     </nav>
 
-    <main>
-        <!-- Sección de Gus: Productos y Sabores -->
-        <h2>Nuestro Catálogo</h2>
-        <div class="grid-productos">
-            <article class="producto">
-                <h3>Helado de Vainilla</h3>
-                <p>Presentación: Sencillo, Doble, Litro.</p>
-            </article>
-            <article class="producto">
-                <h3>Helado de Chocolate</h3>
-                <p>Presentación: Sencillo, Doble, Litro.</p>
-            </article>
-            <!-- Agregar más sabores aquí -->
-        </div>
+    <main class="container catalogo-section">
+        <!-- Sección de Gus: Productos, presentaciones y sabores -->
+        <section>
+            <h2>Nuestra Carta de Helados</h2>
+            <div class="grid-productos">
+                <article class="producto">
+                    <div>
+                        <img src="placeholder-icecream.png" alt="Helado de Fresa">
+                        <p class="producto-title">Fresa Real</p>
+                        <p>Hecho con fresas frescas.</p>
+                    </div>
+                    <p class="producto-price">$35.00</p>
+                </article>
+                <article class="producto">
+                    <div>
+                        <img src="placeholder-icecream.png" alt="Helado de Café">
+                        <p class="producto-title">Mocha Cremosso</p>
+                        <p>Un toque de café.</p>
+                    </div>
+                    <p class="producto-price">$40.00</p>
+                </article>
+                <article class="producto">
+                    <div>
+                        <img src="placeholder-icecream.png" alt="Helado de Pistacho">
+                        <p class="producto-title">Pistacho Grecioso</p>
+                    </div>
+                    <p class="producto-price">$45.00</p>
+                </article>
+                 <!-- Puedes copiar y pegar más bloques de <article> aquí para más sabores -->
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Heladería Crucitos.</p>
+        <div class="container">
+            <p>Crucitos</p>
+            <p class="team-credits">© 2026. Gus.</p>
+        </div>
     </footer>
 </body>
 </html>
