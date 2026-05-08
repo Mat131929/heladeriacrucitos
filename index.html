@@ -2,33 +2,87 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Heladería Crucitos - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Heladería Crucitos V2</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para el Index (Colores de image_0.png) */
+        .brand { border-bottom: 3px solid var(--secondary-green); }
+        .hero-banner {
+            background-color: white;
+            padding: 100px 0;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 50px;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--secondary-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+        .cta-button:hover { background-color: #55a069; }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Heladería Crucitos</h1>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="brand">Heladería Crucitos</a>
+                <ul class="nav-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Sección de Alexis: Carrusel de promociones -->
-        <section id="carrusel">
-            <div class="banner-promos">
-                <h2>Promociones de Temporada</h2>
-                <p>¡No te pierdas nuestros sabores del mes!</p>
+    <main class="container">
+        <!-- Sección de Alexis: Banner Hero (Carousel Placeholder) -->
+        <section id="promo-carousel">
+            <div class="hero-banner">
+                <h1 class="hero-title">¡Promo de Temporada!</h1>
+                <p>Nuestra exclusiva "Pasión de Fresa" a mitad de precio este fin de semana.</p>
+                <br>
+                <a href="catalogo.html" class="cta-button">Ver Sabores</a>
             </div>
         </section>
 
-        <nav class="menu-principal">
-            <a href="nosotros.html">Misión y Visión</a>
-            <a href="catalogo.html">Nuestro Catálogo</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <!-- Sección de Resumen del Catálogo -->
+        <section id="featured-flavors">
+            <h2>Sabores del Mes</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="placeholder-icecream.png" alt="Sabor de Chocolate">
+                    <p class="card-title">Chocolate Suizo</p>
+                    <p>Un clásico cremoso y rico.</p>
+                </div>
+                <div class="card">
+                    <img src="placeholder-icecream.png" alt="Sabor de Vainilla">
+                    <p class="card-title">Vainilla Real</p>
+                    <p>Pura y dulce vainilla de Madagascar.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Heladería Crucitos. Todos los derechos reservados.</p>
-        <p>Desarrollado por el equipo: Alexis, Mateo, Fer, Quetzal y Gus.</p>
+        <div class="container">
+            <p class="brand">Crucitos</p>
+            <p class="team-credits">Desarrollado por el equipo: Alexis, Mateo, Fer, Quetzal y Gus. 2026.</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
