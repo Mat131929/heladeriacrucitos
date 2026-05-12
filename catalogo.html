@@ -2,81 +2,50 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Heladería Crucitos V2</title>
+    <title>Catálogo - Heladería Crucitos</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos específicos para Catálogo (Color de image_0.png) */
-        h2 { border-bottom: 3px solid var(--secondary-brown); display: inline-block; padding-bottom: 5px; margin-bottom: 40px;}
-        .catalogo-section { text-align: center; }
-        .grid-productos {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
-        }
-        .producto {
-            background-color: white;
-            padding: 15px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-soft);
-            text-align: left;
-            border-left: 5px solid var(--secondary-brown);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .producto-title { font-weight: 700; color: #555; }
-        .producto-price { font-size: 1.2rem; color: var(--secondary-brown); font-weight: 700;}
-        .producto img { max-width: 80px; margin-bottom: 10px;}
-    </style>
 </head>
 <body>
-    <nav class="banner-nav">
-        <div class="container">
-            <a href="index.html">← Inicio</a>
-            <a href="nosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Crucitos</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main class="container catalogo-section">
-        <!-- Sección de Gus: Productos, presentaciones y sabores -->
-        <section>
-            <h2>Nuestra Carta de Helados</h2>
-            <div class="grid-productos">
-                <article class="producto">
-                    <div>
-                        <img src="placeholder-icecream.png" alt="Helado de Fresa">
-                        <p class="producto-title">Fresa Real</p>
-                        <p>Hecho con fresas frescas.</p>
-                    </div>
-                    <p class="producto-price">$35.00</p>
-                </article>
-                <article class="producto">
-                    <div>
-                        <img src="placeholder-icecream.png" alt="Helado de Café">
-                        <p class="producto-title">Mocha Cremosso</p>
-                        <p>Un toque de café.</p>
-                    </div>
-                    <p class="producto-price">$40.00</p>
-                </article>
-                <article class="producto">
-                    <div>
-                        <img src="placeholder-icecream.png" alt="Helado de Pistacho">
-                        <p class="producto-title">Pistacho Grecioso</p>
-                    </div>
-                    <p class="producto-price">$45.00</p>
-                </article>
-                 <!-- Puedes copiar y pegar más bloques de <article> aquí para más sabores -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nuestros Sabores</h1>
+            <p>Selecciona tu favorito y apartalo por WhatsApp</p>
+        </div>
+    </section>
+
+    <main class="catalog-grid">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&q=80" class="product-img">
+            <div class="product-info">
+                <h3>Vainilla Gourmet</h3>
+                <p>Cremosa vainilla artesanal con trozos de chocolate.</p>
+                <a href="https://wa.me/521234567890?text=Hola%20Crucitos,%20me%20gustaría%20apartar%20un%20helado%20de%20Vainilla%20Gourmet" class="btn-whatsapp">
+                    Apartar por WhatsApp
+                </a>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>Crucitos</p>
-            <p class="team-credits">© 2026. Gus.</p>
         </div>
-    </footer>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=500&q=80" class="product-img">
+            <div class="product-info">
+                <h3>Frutos Rojos</h3>
+                <p>Sorbet refrescante 100% natural.</p>
+                <a href="https://wa.me/521234567890?text=Hola%20Crucitos,%20quiero%20información%20sobre%20el%20helado%20de%20Frutos%20Rojos" class="btn-whatsapp">
+                    Preguntar Disponibilidad
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
-</html>
+</html>>
