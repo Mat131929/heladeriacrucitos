@@ -2,61 +2,44 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - Heladería Crucitos V2</title>
+    <title>Nosotros | Heladería Crucitos</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos específicos para Nosotros (Color de image_0.png) */
-        h2 { border-bottom: 3px solid var(--secondary-orange); display: inline-block; padding-bottom: 5px; margin-bottom: 40px;}
-        .valores-section { text-align: center; }
-        .reconocimientos { background-color: #ffe0b2; color: #333;}
-        .card { border-top: 5px solid var(--secondary-orange); }
-    </style>
 </head>
 <body>
-    <!-- Banner de navegación superior (Nota de image_0.png) -->
-    <nav class="banner-nav">
-        <div class="container">
-            <a href="index.html">← Volver al Inicio</a>
-            <a href="catalogo.html">Ver Catálogo</a>
-            <a href="contacto.html">Contáctanos</a>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Crucitos</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main class="container">
-        <!-- Sección de Mateo: Valores de la Empresa -->
-        <section class="valores-section">
-            <h2>Nuestra Esencia</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3 class="card-title">Misión</h3>
-                    <p>Endulzar cada momento con helados artesanales de la más alta calidad y un servicio sonriente.</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Visión</h3>
-                    <p>Ser reconocidos en la región como la heladería artesanal líder para finales de 2026.</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Valores</h3>
-                    <p>Integridad, Pasión, Calidad Artesanal y Respeto por nuestros clientes.</p>
-                </div>
-            </div>
-        </section>
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1350&q=80');">
+        <div class="hero-content">
+            <h1>Nuestra Historia</h1>
+            <p>Pasión por lo que hacemos</p>
+        </div>
+    </section>
 
-        <!-- Apartado secreto/especial de reconocimiento -->
-        <section class="valores-section">
-            <h2>Reconocimientos Especiales</h2>
-            <div class="card reconocimientos">
-                <p>Nuestra página ha sido reconocida por su diseño modular y experiencia de usuario. ¡Gracias Familia 5!</p>
+    <main class="section-container">
+        <div class="contacto-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <div class="card-vistos">
+                <h3>Misión</h3>
+                <p>Ofrecer helados artesanales únicos que brinden momentos de felicidad a cada familia.</p>
             </div>
-        </section>
+            <div class="card-vistos">
+                <h3>Visión</h3>
+                <p>Ser la heladería líder en innovación y presencia digital para el 2026.</p>
+            </div>
+        </div>
+        
+        <div class="card-vistos" style="background-color: #fce4ec; border: none; text-align: center;">
+            <p><strong>Reconocimiento:</strong> Este proyecto forma parte del desarrollo de creatividad e innovación digital.</p>
+        </div>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>Crucitos</p>
-            <p class="team-credits">© 2026. Mateo.</p>
-        </div>
-    </footer>
 </body>
 </html>
