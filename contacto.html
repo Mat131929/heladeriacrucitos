@@ -85,45 +85,5 @@
             </a>
         </div>
     </main>
-
-    <div id="chat-container">
-        <div class="chat-header">Asistente Crucitos 🍦</div>
-        <div id="chat-messages">
-            <p><strong>Bot:</strong> ¡Hola! Soy el asistente de Crucitos. ¿En qué puedo ayudarte?</p>
-        </div>
-        <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Pregunta por horarios...">
-            <button onclick="sendMessage()">Enviar</button>
-        </div>
-    </div>
-
-    <div id="chat-widget" onclick="toggleChat()">💬</div>
-
-    <script>
-        function toggleChat() {
-            const chat = document.getElementById('chat-container');
-            chat.style.display = chat.style.display === 'block' ? 'none' : 'block';
-        }
-
-        function sendMessage() {
-            const input = document.getElementById('user-input');
-            const messages = document.getElementById('chat-messages');
-            if (input.value.trim() !== "") {
-                messages.innerHTML += `<p><strong>Tú:</strong> ${input.value}</p>`;
-                setTimeout(() => {
-                    let respuesta = "Lo siento, no entiendo la duda. Un delegado te contactará pronto.";
-                    const texto = input.value.toLowerCase();
-                    if (texto.includes("horario") || texto.includes("abren")) {
-                        respuesta = "Abrimos de Lunes a Domingo de 11:00 AM a 9:00 PM.";
-                    } else if (texto.includes("donde") || texto.includes("ubicacion")) {
-                        respuesta = "Estamos ubicados muy cerca de la UPSLP en San Luis Potosí.";
-                    }
-                    messages.innerHTML += `<p><strong>Bot:</strong> ${respuesta}</p>`;
-                    messages.scrollTop = messages.scrollHeight;
-                }, 500);
-                input.value = "";
-            }
-        }
-    </script>
 </body>
 </html>
