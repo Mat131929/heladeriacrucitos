@@ -2,87 +2,36 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Heladería Crucitos V2</title>
+    <title>Heladería Crucitos | Inicio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos específicos para el Index (Colores de image_0.png) */
-        .brand { border-bottom: 3px solid var(--secondary-green); }
-        .hero-banner {
-            background-color: white;
-            padding: 100px 0;
-            border-radius: var(--border-radius);
-            text-align: center;
-            box-shadow: var(--shadow-soft);
-            margin-bottom: 50px;
-        }
-        .hero-title {
-            font-size: 3.5rem;
-            color: var(--accent);
-            margin-bottom: 10px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 25px;
-            background-color: var(--secondary-green);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 700;
-            transition: background 0.3s;
-        }
-        .cta-button:hover { background-color: #55a069; }
-    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav class="main-nav">
-                <a href="index.html" class="brand">Heladería Crucitos</a>
-                <ul class="nav-links">
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Crucitos</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <!-- Sección de Alexis: Banner Hero (Carousel Placeholder) -->
-        <section id="promo-carousel">
-            <div class="hero-banner">
-                <h1 class="hero-title">¡Promo de Temporada!</h1>
-                <p>Nuestra exclusiva "Pasión de Fresa" a mitad de precio este fin de semana.</p>
-                <br>
-                <a href="catalogo.html" class="cta-button">Ver Sabores</a>
-            </div>
-        </section>
-
-        <!-- Sección de Resumen del Catálogo -->
-        <section id="featured-flavors">
-            <h2>Sabores del Mes</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <img src="placeholder-icecream.png" alt="Sabor de Chocolate">
-                    <p class="card-title">Chocolate Suizo</p>
-                    <p>Un clásico cremoso y rico.</p>
-                </div>
-                <div class="card">
-                    <img src="placeholder-icecream.png" alt="Sabor de Vainilla">
-                    <p class="card-title">Vainilla Real</p>
-                    <p>Pura y dulce vainilla de Madagascar.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p class="brand">Crucitos</p>
-            <p class="team-credits">Desarrollado por el equipo: Alexis, Mateo, Fer, Quetzal y Gus. 2026.</p>
-            <p>Todos los derechos reservados.</p>
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1576506295286-5cda18df43e7?auto=format&fit=crop&w=1350&q=80');">
+        <div class="hero-content">
+            <h1>Bienvenidos a Crucitos</h1>
+            <p>Sabor artesanal en cada detalle</p>
         </div>
-    </footer>
+    </section>
+
+    <main class="section-container">
+        <div class="card-vistos" style="text-align: center;">
+            <h2>Tradición y Sabor</h2>
+            <p>Descubre por qué somos la heladería favorita de San Luis Potosí. Calidad artesanal y frescura garantizada.</p>
+            <br>
+            <a href="catalogo.html" class="btn-whatsapp" style="background-color: var(--crucitos-pink);">Explorar el Catálogo</a>
+        </div>
+    </main>
 </body>
 </html>
