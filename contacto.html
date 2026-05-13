@@ -6,7 +6,6 @@
     <title>Contacto - Heladería Crucitos</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Estilos específicos para armonizar con el estilo San My */
         .contacto-container {
             max-width: 900px;
             margin: 50px auto;
@@ -15,25 +14,44 @@
         }
         .contacto-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
         }
         .info-card {
             background: white;
-            padding: 30px;
+            padding: 40px 30px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             text-align: center;
             border-top: 5px solid var(--crucitos-pink);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .info-card h3 {
             font-family: 'Playfair Display', serif;
             margin-bottom: 15px;
             color: var(--crucitos-pink);
+            font-size: 1.8rem;
         }
         .social-icons {
-            font-size: 1.5rem;
-            margin-top: 15px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            font-weight: bold;
+            color: var(--secondary-purple);
+        }
+        
+        /* Ajuste para que los botones se vean integrados */
+        .btn-whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
         }
     </style>
 </head>
@@ -64,25 +82,16 @@
                 <p><strong>WhatsApp:</strong> +52 444 123 4567</p>
                 <p><strong>Email:</strong> hola@crucitos.com</p>
                 <div class="social-icons">
-                    <span>Facebook | Instagram</span>
+                    <span>Facebook • Instagram</span>
                 </div>
             </div>
-
             <div class="info-card">
-                <h3>Asistente Virtual</h3>
-                <p>Obtén respuestas inmediatas sobre nuestros horarios y servicios.</p>
-                <button class="btn-whatsapp" onclick="toggleChat()" style="background-color: var(--secondary-purple); border: none; cursor: pointer;">
-                    Abrir Chat de Ayuda
-                </button>
+                <h3>Cotizaciones para Eventos</h3>
+                <p>Si buscas helados para una fiesta en San Luis Potosí, nosotros somos tu mejor opción.</p>
+                <a href="https://wa.me/524441234567?text=Hola%20Crucitos,%20me%20interesa%20una%20cotización%20para%20un%20evento" class="btn-whatsapp" style="background-color: var(--crucitos-pink); color: white;">
+                    Enviar Solicitud
+                </a>
             </div>
-        </div>
-
-        <div class="info-card" style="margin-top: 30px;">
-            <h3>Cotizaciones para Eventos</h3>
-            <p>Si buscas helados para una fiesta en San Luis Potosí, nosotros somos tu mejor opción.</p>
-            <a href="https://wa.me/524441234567?text=Hola%20Crucitos,%20me%20interesa%20una%20cotización%20para%20un%20evento" class="btn-whatsapp">
-                Enviar Solicitud
-            </a>
         </div>
     </main>
 </body>
