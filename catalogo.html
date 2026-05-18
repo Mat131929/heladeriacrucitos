@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Heladería Crucitos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para la cuadrícula de productos */
+        /* DISEÑO DEL CATÁLOGO - DESPLIEGUE COMPLETO */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+    border-top: 5px solid var(--crucitos-pink);
+    
+    /* Flexbox para que el botón siempre quede abajo aunque varíe la altura */
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Las imágenes se adaptan al 100% de su tamaño real sin cortes */
+.product-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 25px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+    color: #555;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Crucitos</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero"
+        style="background-image: url('https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=1350&q=80');">
+        <div class="hero-content">
+            <h1>Nuestros Sabores</h1>
+            <p>Elige tu favorito y apártalo directo por WhatsApp</p>
+        </div>
+    </section>
+   <main class="container">
+    <h2 class="category-title">Nuestro Menú</h2>
+    
+    <div class="catalog-grid">
+        <div class="product-card">
+            <img src="agua.jpeg" alt="Sabores de Agua" class="product-img">
+            <div class="product-info">
+                <h3>Helados de Agua</h3>
+                <p>Desde Limón hasta Guanábana. Refrescantes opciones elaboradas con frutas naturales seleccionadas.</p>
+                <a href="https://wa.me/524448250091?text=Hola%20Crucitos,%20me%20gustaría%20apartar%20un%20Helado%20de%20Agua" class="btn-whatsapp">Apartar ahora</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="leche.jpeg" alt="Sabores de Leche" class="product-img">
+            <div class="product-info">
+                <h3>Helados de Leche</h3>
+                <p>Una enorme variedad cremosa: Cajeta, Piñón, Crema de Limón, Amareto y más clásicos deliciosos.</p>
+                <a href="https://wa.me/524448250091?text=Hola%20Crucitos,%20me%20gustaría%20apartar%20un%20Helado%20de%20Leche" class="btn-whatsapp">Apartar ahora</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="especialidades.jpeg" alt="Especialidades" class="product-img">
+            <div class="product-info">
+                <h3>Especialidades</h3>
+                <p>Prueba nuestro Banana Split, Helado Arlequín, Tres Marías o una exquisita Malteada preparada.</p>
+                <a href="https://wa.me/524448250091?text=Hola%20Crucitos,%20me%20gustaría%20apartar%20una%20Especialidad" class="btn-whatsapp">Apartar ahora</a>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer style="text-align: center; padding: 40px 0; color: #777; font-size: 0.9rem;">
+        <p>&copy; 2026 Heladería Crucitos. Proyecto de Creatividad UPSLP.</p>
+    </footer>
+</body>
+
+</html>
